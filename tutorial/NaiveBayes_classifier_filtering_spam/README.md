@@ -24,6 +24,9 @@ P(S)+P(-S)=1 ; P(S)- probability of spam,P(-S)- probability of not not spam
 P(-R) = 1-P(R)= 1-0.3 = 0.7
 P(-S) = 1-P(S)= 1-0.2 = 0.8
 
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/tutorial/NaiveBayes_classifier_filtering_spam/understanding%20probability.JPG)
+
+
 This concludes **rain and will not rain, spam and not spam are mutually exclusive and exhaustive events ~ which means they cannot occur at the same time, and there is only one possible outcome**
 
 ## Understanding Joint Probability:
