@@ -1,4 +1,4 @@
-# Naive Bayes Classifier
+# Bayesian Probability
 
 ## Source:  
 1 . http://eneskemalergin.github.io/blog/classification_with_naive_bayes/  
