@@ -50,9 +50,14 @@ Formula :  P(A/B) = P(A ∩ B)/P(B) #P(A/B), probability of event A given that e
 Frequency|Virus-Yes|Virus-No|Total  
 ---------|---------|--------|-----
 Spam|4|16|20
-Not Spam|1|79|80
+Not Spam|1|79|80  
+Total|5|95|100  
 
-
+Likelihood|Virus-Yes|Virus-No|Total  
+---------|---------|--------|-----
+Spam|4/20|16/20|20
+Not Spam|1/80|79/80|80  
+Total|5/100|95/100|100
  
   
   
