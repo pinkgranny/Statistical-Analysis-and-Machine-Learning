@@ -39,6 +39,8 @@ This concludes **rain and will not rain, spam and not spam are mutually exclusiv
   
   Naive Bayes Classifiers are linear classifiers , they are simple but very efficient.The model of Naive Baye's classifier is dependent   on Baye's Theorem.It is assumed the dataset is mutually independent.But strong violations of the independence assumptions and 
   non-linear classification problems can lead to very poor performances of naive Bayes classifiers. Baye's classifier is used mainly in
-  text classification.
+  text classification.  
+  
+  ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/joint%20prob.JPG)
   
   
