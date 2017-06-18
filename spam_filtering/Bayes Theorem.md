@@ -37,14 +37,14 @@ The virus circle doesnot completely fill the spam circle, nor is it completely c
 
 ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/jp_close.JPG)  
 
-If spam and virus where two independent events.Since 20% of the emails were spam P(spam)=20/100=0.20 and 5% of emails contained the word virus P(virus)=5/100=0.05, So the email which are spam and contained the word virus P(spam ∩ virus)= P(spam) X P(virus)= 0.20 X 0.05 = 0.01. i.e 1% of the all emails.
+If spam and virus where two **independent** events.Since 20% of the emails were spam P(spam)=20/100=0.20 and 5% of emails contained the word virus P(virus)=5/100=0.05, So the email which are spam and contained the word virus **P(spam ∩ virus)= P(spam) X P(virus)**= 0.20 X 0.05 = 0.01. i.e 1% of the all emails.
 
 ## Conditional Probability:  
 
 The calculation for dependent events is more complex.Relationship between dependent events can be described using **Baye's theorem**.  
 
 ```
-Formula :  P(A/B) = P(A ∩ B)/P(B) #
+Formula :  P(A/B) = P(A ∩ B)/P(B) #P(A/B), probability of event A given that event B has occurred.
 ```
 
 
