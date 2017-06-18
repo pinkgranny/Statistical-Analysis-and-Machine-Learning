@@ -47,17 +47,29 @@ The calculation for dependent events is more complex.Relationship between depend
 Formula :  P(A/B) = P(A ∩ B)/P(B) #P(A/B), probability of event A given that event B has occurred.
 ```
 
+We continue with our previous example, Virus-Yes : number of times the word virus is found in Spam and not Spam mails. Virus no is the complementary condition. Probability that a message is spam is 20%, i.e previously know - prior probability.  
+
+Now we want to look close , probability of the word virus used in previously recieved 20% of spam, which we term as **likelihood**. We construct a frequency table which has the number of spam and non-spam emails listing whether they have the word virus in them or not.
+
 Frequency|Virus-Yes|Virus-No|Total  
 ---------|---------|--------|-----
 Spam|4|16|20
 Not Spam|1|79|80  
 Total|5|95|100  
 
+In the below table we calculate the likelihood ratio of a spam and non-spam mail to contain the word virus, and not to contain the word virus.
+
 Likelihood|Virus-Yes|Virus-No|Total  
 ---------|---------|--------|-----
 Spam|4/20|16/20|20
 Not Spam|1/80|79/80|80  
-Total|5/100|95/100|100
+Total|5/100|95/100|100  
+
+The likelihood table reveals P(Virus=Yes|Spam) = 4/20 = 0.20. i.e 20% of the messages contain the term Virus, provided the message is spam.  
+We can calculate P(Spam ∩ Virus) = P(Virus|Spam) x P(Spam) = 0.20 x 0.20 =.04 = 4% (i.e messages which are both Spam and contain the word Virus). We find it 4 times greater than our estimate for independent event.  
+
+Now we calculate the probability of a message to be spam , if it contains the word "Virus", using Baye's equation :  
+**P(Spam|Virus) = P(Virus=Yes|Spam) x P(Spam) / P(Virus)** = (0.20 x 0.20)/0.05 = .80 = 80%. 
  
   
   
