@@ -47,6 +47,10 @@ The calculation for dependent events is more complex.Relationship between depend
 Formula :  P(A/B) = P(A ∩ B)/P(B) #P(A/B), probability of event A given that event B has occurred.
 ```
 
+Frequency|Virus-Yes|Virus-No|Total  
+---------|---------|--------|-----
+Spam|4|16|20
+Not Spam|1|79|80
 
 
  
