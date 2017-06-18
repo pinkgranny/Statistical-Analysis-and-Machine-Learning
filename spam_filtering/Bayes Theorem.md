@@ -29,9 +29,10 @@ P(-S) = 1-P(S)= 1-0.2 = 0.8
 
 This concludes **rain and will not rain, spam and not spam are mutually exclusive and exhaustive events ~ which means they cannot occur at the same time, and there is only one possible outcome**
 
-## Understanding Joint Probability:
+## Understanding Joint Probability:  
 
 
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/joint%20prob.JPG)
 
 
 
@@ -41,6 +42,6 @@ This concludes **rain and will not rain, spam and not spam are mutually exclusiv
   non-linear classification problems can lead to very poor performances of naive Bayes classifiers. Baye's classifier is used mainly in
   text classification.  
   
-  ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/joint%20prob.JPG)
+  
   
   
