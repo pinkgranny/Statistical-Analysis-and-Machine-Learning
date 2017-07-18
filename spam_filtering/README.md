@@ -6,6 +6,14 @@
   
   # Data:  
   
-  The dataset contains SMS messages , unwanted messages labelled spam and wanted message labelled as ham.
+  The dataset contains SMS messages , unwanted messages labelled spam and wanted message labelled as ham.The descriptive view of the data :  
+  
+  ```
+  > str(sms_raw)
+'data.frame':	5574 obs. of  2 variables:
+ $ type: chr  "ham" "ham" "spam" "ham" ...
+ $ text: chr  "Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat..." "Ok lar... Joking wif u oni..." "Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121 to receive entry question(std txt rate)T&C"| __truncated__ "U dun say so early hor... U c already then say..." ...
+ ```
+ 
   
   
