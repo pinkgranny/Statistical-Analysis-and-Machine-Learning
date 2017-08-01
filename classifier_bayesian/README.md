@@ -93,4 +93,19 @@ Warning messages:
 There were 39 warnings (use warnings() to see them)
 ````
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/wordcloud_sms_corpus_train.jpeg)
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/wordcloud_sms_corpus_train.jpeg)  
+
+We create subset for spam and ham, then we generate a word cloud for spam and ham.
+
+```
+# subset spam ones
+spam <- subset(sms_raw_train, type=="spam")
+
+# subset ham ones
+ham <- subset(sms_raw_train, type=="ham")
+
+wordcloud(spam$text, max.word = 40, scale= c(3, 0.5))
+wordcloud(ham$text, max.word = 40, scale= c(3, 0.5))
+```  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/spam.jpeg)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/ham.jpeg)
