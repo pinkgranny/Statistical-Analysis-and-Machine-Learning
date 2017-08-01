@@ -93,4 +93,4 @@ Warning messages:
 There were 39 warnings (use warnings() to see them)
 ````
 
-![alt text]()
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/wordcloud_sms_corpus_train.jpeg)
