@@ -76,3 +76,20 @@ sms_corpus_test <- corpus_clean[4170:5559]
 1209  181 
 ```
 
+## Visualizing text data - Word Cloud:  
+
+After installing ```wordcloud```, which is a way to visually depict the appearance of the words in text data.
+
+```
+> # install.packages("wordcloud")
+> library(wordcloud)
+Loading required package: RColorBrewer
+Warning messages:
+1: package ‘wordcloud’ was built under R version 3.3.3 
+2: package ‘RColorBrewer’ was built under R version 3.3.2 
+> 
+> # Create the wordcloud diagram, most frequent ones will be close to the center
+> wordcloud(sms_corpus_train, min.freq = 40, random.order = FALSE)
+There were 39 warnings (use warnings() to see them)
+````
+
