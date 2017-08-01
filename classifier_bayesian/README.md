@@ -107,9 +107,8 @@ ham <- subset(sms_raw_train, type=="ham")
 wordcloud(spam$text, max.word = 40, scale= c(3, 0.5))
 wordcloud(ham$text, max.word = 40, scale= c(3, 0.5))
 ```  
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/spam.jpeg)  
-Figure : Spam  
+Figure : Spam | Figure : Ham  
+:------------:|:------------:
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/spam.jpeg) | ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/ham.jpeg)  
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/ham.jpeg)   
-Figure : Ham
 
