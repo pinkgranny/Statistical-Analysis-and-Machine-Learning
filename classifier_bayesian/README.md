@@ -22,4 +22,6 @@
  ham spam 
 4827  747 
 >
-```
+```  
+## Processing Text data for Analysis:  
+```tm``` package is installed , ```library(tm)``` is called,it is good package for text processing/NLP.
