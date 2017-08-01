@@ -24,4 +24,9 @@
 >
 ```  
 ## Processing Text data for Analysis:  
-```tm``` package is installed , ```library(tm)``` is called,it is good package for text processing/NLP.
+```tm``` package is installed , ```library(tm)``` is called,it is good package for text processing/NLP. Firstly we process text using ```corpus``` command. ```Corpus()``` command creates an R object to store text documents. ```Vector Source()``` gets the text data source.  
+```
+library(tm)
+sms_corpus=Corpus(VectorSource(sms_raw$text))
+```
+
