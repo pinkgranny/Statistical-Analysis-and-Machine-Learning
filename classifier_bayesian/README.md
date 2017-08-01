@@ -29,4 +29,20 @@
 library(tm)
 sms_corpus=Corpus(VectorSource(sms_raw$text))
 ```
+In text data analysis it is important to remove stop words and other characters,we change all the characters into lowercase and get rid of numbers.  
+```
+corpus_clean <- tm_map(sms_corpus, content_transformer(tolower)) # all to lowercase
+corpus_clean <- tm_map(corpus_clean, content_transformer(removeNumbers)) # get rid of all numbers
+```  
+Now cleaning the stop words, punctuation and white space.  
+```
+corpus_clean <- tm_map(corpus_clean, content_transformer(removeWords), stopwords()) # remove all stopwords
+corpus_clean <- tm_map(corpus_clean, content_transformer(removePunctuation)) # removes all punctuation
+corpus_clean <- tm_map(corpus_clean, content_transformer(stripWhitespace)) # removes additional white space
+```  
+```tm``` package provides functionality to tokenize SMS message, ```DocumentTermMatrix(corpus_clean)``` create a data structure called a **sparse matrix**.  
+
+## Creating training and test datasets:
+
+Before applying machine learning we split data into two parts test and train data. 75% of data assigned for training data and 25% for test data.
 
