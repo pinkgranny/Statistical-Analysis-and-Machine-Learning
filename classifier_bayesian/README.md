@@ -44,5 +44,35 @@ corpus_clean <- tm_map(corpus_clean, content_transformer(stripWhitespace)) # rem
 
 ## Creating training and test datasets:
 
-Before applying machine learning we split data into two parts test and train data. 75% of data assigned for training data and 25% for test data.
+Before applying machine learning we split data into two parts test and train data. 75% of data assigned for training data and 25% for test data.  
+```
+#Splitting raw data frame
+sms_raw_train <- sms_raw[1:4169, ]
+sms_raw_test <- sms_raw[4170:5559, ]
+
+# splitting document-term matrix
+sms_dtm_train <- sms_dtm[1:4169, ]
+sms_dtm_test <- sms_dtm[4170:5559, ]
+
+# splitting corpus
+sms_corpus_train <- corpus_clean[1:4169]
+sms_corpus_test <- corpus_clean[4170:5559]
+
+> prop.table(table(sms_raw_train$type))
+
+      ham      spam 
+0.8647158 0.1352842 
+> prop.table(table(sms_raw_test$type))
+
+      ham      spam 
+0.8697842 0.1302158 
+> table(sms_raw_train$type)
+
+ ham spam 
+3605  564 
+> table(sms_raw_test$type)
+
+ ham spam 
+1209  181 
+```
 
