@@ -160,6 +160,68 @@ sms_test <- apply(sms_dtm_freq_test, MARGIN = 2,
                   convert_counts)
 ```  
 The apply() function allows a function to be used on each of the rows or columns in a matrix. It uses a MARGIN parameter to specify either rows or columns. Here, we'll use MARGIN = 2, since we're interested in the columns (MARGIN = 1 is used for rows).  
-The result will be two character type matrixes, each with cells indicating "Yes" or "No" for whether the word represented by the column appears at any point in the message represented by the row.
+The result will be two character type matrixes, each with cells indicating "Yes" or "No" for whether the word represented by the column appears at any point in the message represented by the row.  
+
+## Training a model on the data:  
+
+We installed ```install.packages("e1071") library(e1071)```  a package by TU Wein for machine learning.Unlike the k-NN algorithm we used for classification in the previous chapter, a Naive Bayes learner is trained and used for classification in separate stages.  
+
+To build model on sms_train matrix, we use the following command:```sms_classifier <- naiveBayes(sms_train, sms_train_labels)```  
+```sms_classifier``` object now contains naiveBayes classifier that now can be used to make prediction.  
+```
+sms_train_labels          No         Yes
+            ham  0.998613037 0.001386963
+            spam 1.000000000 0.000000000
+
+                looks
+sms_train_labels          No         Yes
+            ham  0.998335645 0.001664355
+            spam 1.000000000 0.000000000
+
+                idea
+sms_train_labels          No         Yes
+            ham  0.998058252 0.001941748
+            spam 1.000000000 0.000000000
+
+                away
+sms_train_labels          No         Yes
+            ham  0.996116505 0.003883495
+            spam 0.996453901 0.003546099
+
+                fantastic
+sms_train_labels          No         Yes
+            ham  0.999445215 0.000554785
+            spam 0.994680851 0.005319149
+
+                aftr
+sms_train_labels          No         Yes
+            ham  0.998613037 0.001386963
+            spam 1.000000000 0.000000000
+
+                dey
+sms_train_labels          No         Yes
+            ham  0.998613037 0.001386963
+            spam 1.000000000 0.000000000
+
+                sit
+sms_train_labels          No         Yes
+            ham  0.998613037 0.001386963
+            spam 1.000000000 0.000000000
+
+                students
+sms_train_labels         No        Yes
+            ham  0.99889043 0.00110957
+            spam 1.00000000 0.00000000
+
+                wer
+sms_train_labels          No         Yes
+            ham  0.999445215 0.000554785
+            spam 1.000000000 0.000000000
+```
+
+
+
+
+
 
 
