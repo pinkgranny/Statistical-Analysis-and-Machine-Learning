@@ -74,6 +74,7 @@ Now we calculate the probability of a message to be spam , if it contains the wo
 ## Classification with Naive Bayes:  
 
 In addition to Virus, now there are more variables, money, groceries and unsubscribe.Below is the chart of spam and Not spam table with the following variables.  
+
 Likelihood|Virus-Yes|Virus-No|Money-Yes|Money-No|Groceries-Yes|Groceries-No|Unsubscribe-Yes|Unsubscribe-No|Total  
 ---------|---------|--------|--------|---------|----------|----------|-----------|---------|--------------|-----
 Spam|4/20|16/20|10/20|10/20|0/20|20/20|12/20|8/20|20
