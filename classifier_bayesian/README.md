@@ -111,4 +111,18 @@ Figure : Spam | Figure : Ham
 :------------:|:------------:
 ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/spam.jpeg) | ![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/ham.jpeg)  
 
+```findFreqTerms()``` function of ```tm``` package,returns a character vector containing the words that appear for at least the specified number of times. For instance,the below code displays the words appearing at least five times in the sms_dtm_train matrix.  
+
+```
+> findFreqTerms(sms_dtm_train, 5)
+   [1] "available"       "bugis"           "cine"            "crazy"          
+   [5] "got"             "great"           "point"           "wat"            
+   [9] "world"           "lar"             "wif"             "apply"          
+  [13] "comp"            "cup"             "entry"           "final"          
+  [17] "free"            "may"             "receive"         "text"           
+  [21] "txt"             "win"             "wkly"            "already"        
+
+```
+
+
 
