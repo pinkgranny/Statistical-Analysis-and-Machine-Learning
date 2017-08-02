@@ -153,6 +153,14 @@ The training and test datasets now include 1,136 features, which correspond to w
 Since,Naive Bayes classifier is typically trained on data with categorical features.This poses a problem, since the cells in the sparse matrix are numeric and measure the number of times a word appears in a message. We need to change this to a categorical variable that simply indicates yes or no depending on whether the word appears at all.  
 ```convert_counts()``` function converts count to strings : Yes/No.
 
+```
+sms_train <- apply(sms_dtm_freq_train, MARGIN = 2,
+                   convert_counts)
 
+sms_test <- apply(sms_dtm_freq_test, MARGIN = 2,
+                  convert_counts)
+```  
+The apply() function allows a function to be used on each of the rows or columns in a matrix. It uses a MARGIN parameter to specify either rows or columns. Here, we'll use MARGIN = 2, since we're interested in the columns (MARGIN = 1 is used for rows).  
+The result will be two character type matrixes, each with cells indicating "Yes" or "No" for whether the word represented by the column appears at any point in the message represented by the row.
 
 
