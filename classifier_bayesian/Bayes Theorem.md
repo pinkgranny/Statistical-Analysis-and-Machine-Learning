@@ -24,18 +24,18 @@ P(S)+P(-S)=1 ; P(S)- probability of spam,P(-S)- probability of not not spam
 P(-R) = 1-P(R)= 1-0.3 = 0.7
 P(-S) = 1-P(S)= 1-0.2 = 0.8
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/understanding%20probability.JPG)
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/understanding%20probability.JPG)
 
 
 This concludes **rain and will not rain, spam and not spam are mutually exclusive and exhaustive events ~ which means they cannot occur at the same time, and there is only one possible outcome**
 
 ## Understanding Joint Probability:  
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/joint%20prob.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/joint%20prob.JPG)  
 
 The virus circle doesnot completely fill the spam circle, nor is it completely contained by the spam circle. This implies not all spam messages contain the word virus, and not every email with the word virus is a spam.  
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/spam_filtering/jp_close.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_bayesian/jp_close.JPG)  
 
 If spam and virus where two **independent** events.Since 20% of the emails were spam P(spam)=20/100=0.20 and 5% of emails contained the word virus P(virus)=5/100=0.05, So the email which are spam and contained the word virus **P(spam ∩ virus)= P(spam) X P(virus)**= 0.20 X 0.05 = 0.01. i.e 1% of the all emails.
 
