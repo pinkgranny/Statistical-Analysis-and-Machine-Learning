@@ -217,8 +217,59 @@ sms_train_labels         No        Yes
 sms_train_labels          No         Yes
             ham  0.999445215 0.000554785
             spam 1.000000000 0.000000000
-```
+``` 
 
+## Evaluation of Model and its Performance:  
+To evaluate the sms classifier, we need to test its predictions on unseen messages in the test data.The unseen message features are stored in a matrix named sms_test, while the class labels (spam or ham) are stored in a vector name sms_test_labels. The classifier that we trained has been named sms_classifier.We will use this classifier to generate predictions and then compare the predicted values to the true values.
+```
+> sms_pred_test = predict(sms_classifier,sms_test)
+> sms_pred_test
+   [1] spam ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  spam ham  ham  ham  ham  ham 
+  [21] ham  ham  ham  ham  ham  ham  ham  spam ham  spam spam spam ham  ham  ham  ham  ham  spam ham  ham 
+  [41] ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  ham  spam ham  ham  ham  ham  ham  ham 
+  [61] ham  ham  ham  ham  ham  ham  ham  spam spam ham  ham  ham  ham  ham  spam ham  ham  ham  ham  spam
+
+> head(sms_pred_test)
+[1] spam ham  ham  ham  ham  ham 
+Levels: ham spam
+```  
+Now below we use ```CrossTable()``` function of ```gmodels``` package, and also use dnn parameter dimension to eliminate unnecessary cell proportion and relabel the rows and columns.  
+
+```
+> CrossTable(sms_pred_test, sms_test_labels,
++            prop.chisq = FALSE, prop.t = FALSE,
++            dnn = c('predicted', 'actual'))
+
+ 
+   Cell Contents
+|-------------------------|
+|                       N |
+|           N / Row Total |
+|           N / Col Total |
+|-------------------------|
+
+ 
+Total Observations in Table:  1390 
+
+ 
+             | actual 
+   predicted |       ham |      spam | Row Total | 
+-------------|-----------|-----------|-----------|
+         ham |      1203 |        28 |      1231 | 
+             |     0.977 |     0.023 |     0.886 | 
+             |     0.995 |     0.155 |           | 
+-------------|-----------|-----------|-----------|
+        spam |         6 |       153 |       159 | 
+             |     0.038 |     0.962 |     0.114 | 
+             |     0.005 |     0.845 |           | 
+-------------|-----------|-----------|-----------|
+Column Total |      1209 |       181 |      1390 | 
+             |     0.870 |     0.130 |           | 
+-------------|-----------|-----------|-----------|
+```  
+Looking at the table, we can see that a total of only 6 + 30 = 36 of the 1,390 SMS messages were incorrectly classified (2.6 percent). Among the errors were 6 out of 1,207 ham messages that were misidentified as spam, and 30 of the 183 spam messages were incorrectly labeled as ham.  
+
+This is the reason why Naive Bayes is the standard for text classification;directly out of the box, it performs surprisingly well.
 
 
 
