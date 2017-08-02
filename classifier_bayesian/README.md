@@ -122,6 +122,11 @@ Figure : Spam | Figure : Ham
   [17] "free"            "may"             "receive"         "text"           
   [21] "txt"             "win"             "wkly"            "already"        
 
+> head(findFreqTerms(sms_dtm_train, 5))
+[1] "available" "bugis"     "cine"      "crazy"     "got"       "great"    
+> tail(findFreqTerms(sms_dtm_train, 5))
+[1] "murdered" "murderer" "police"   "budget"   "happens"  "thurs"   
+> 
 ```
 
 
