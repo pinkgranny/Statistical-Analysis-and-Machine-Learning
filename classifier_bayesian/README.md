@@ -150,8 +150,7 @@ sms_dtm_freq_test <- sms_dtm_test[ , sms_freq_words]
 ```  
 The training and test datasets now include 1,136 features, which correspond to words appearing in at least five messages.  
 
-Since,Naive Bayes classifier is typically trained on data with categorical features.This poses a problem, since the cells in the sparse matrix are numeric and measure the number of times a word appears in a message. We need to change this to a categorical variable that simply indicates yes or no depending on whether the word appears at all.  
-```convert_counts()``` function converts count to strings : Yes/No.
+Since,Naive Bayes classifier is typically trained on data with categorical features.This poses a problem, since the cells in the sparse matrix are numeric and measure the number of times a word appears in a message. We need to change this to a categorical variable that simply indicates yes or no depending on whether the word appears at all.  ```convert_counts()``` function converts count to strings : Yes/No.  
 
 ```
 sms_train <- apply(sms_dtm_freq_train, MARGIN = 2,
