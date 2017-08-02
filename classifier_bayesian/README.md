@@ -128,6 +128,31 @@ Figure : Spam | Figure : Ham
 [1] "murdered" "murderer" "police"   "budget"   "happens"  "thurs"   
 > 
 ```
+We assign ```sms_freq_words=findFreqTerms(sms_dtm_train, 5)```, then create a training and test dataset for the dtm dataset. The sms_dtm_train data set :  
+```
+> str(sms_dtm_train)
+List of 6
+ $ i       : int [1:32237] 1 1 1 1 1 1 1 1 1 1 ...
+ $ j       : int [1:32237] 1 2 3 4 5 6 7 8 9 10 ...
+ $ v       : num [1:32237] 1 1 1 1 1 1 1 1 1 1 ...
+ $ nrow    : int 4169
+ $ ncol    : int 7958
+ $ dimnames:List of 2
+  ..$ Docs : chr [1:4169] "1" "2" "3" "4" ...
+  ..$ Terms: chr [1:7958] "amore" "available" "buffet" "bugis" ...
+ - attr(*, "class")= chr [1:2] "DocumentTermMatrix" "simple_triplet_matrix"
+ - attr(*, "weighting")= chr [1:2] "term frequency" "tf"
+```
+Now we sms_dtm_freq_train and test dataset using the sms_freq_words, the words that appear at least 5 times.  
+```
+sms_dtm_freq_train <- sms_dtm_train[ , sms_freq_words]
+sms_dtm_freq_test <- sms_dtm_test[ , sms_freq_words]
+```  
+The training and test datasets now include 1,136 features, which correspond to words appearing in at least five messages.  
+
+Since,Naive Bayes classifier is typically trained on data with categorical features.This poses a problem, since the cells in the sparse matrix are numeric and measure the number of times a word appears in a message. We need to change this to a categorical variable that simply indicates yes or no depending on whether the word appears at all.  
+```convert_counts()``` function converts count to strings : Yes/No.
+
 
 
 
