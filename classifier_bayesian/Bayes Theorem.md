@@ -69,7 +69,11 @@ The likelihood table reveals P(Virus=Yes|Spam) = 4/20 = 0.20. i.e 20% of the mes
 We can calculate P(Spam ∩ Virus) = P(Virus|Spam) x P(Spam) = 0.20 x 0.20 =.04 = 4% (i.e messages which are both Spam and contain the word Virus). We find it 4 times greater than our estimate for independent event.  
 
 Now we calculate the probability of a message to be spam , if it contains the word "Virus", using Baye's equation :  
-**P(Spam|Virus) = P(Virus=Yes|Spam) x P(Spam) / P(Virus)** = (0.20 x 0.20)/0.05 = .80 = 80%. 
+**P(Spam|Virus) = P(Virus=Yes|Spam) x P(Spam) / P(Virus)** = (0.20 x 0.20)/0.05 = .80 = 80%.  
+
+## Classification with Naive Bayes:  
+
+
  
   
   
