@@ -25,11 +25,19 @@ In the above diagram it is clearly shown how decision tree works,the decision tr
 ## Classifying Movie with Decision tree - divide and conquer method:  
 
 For instance we have 3 categories of films, **critical success,mainstream hit,boxoffice hit** .Now the classification of the films depends on our variables in x and y axis.  
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/movie_plot.JPG)
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/movie_plot.JPG)  
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/split.JPG)
+x-axis : estimated budget($) , y-axis : list of celebrities. Based on budget and list of A celebrities, the type of movie is categorized.
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/decision_movie.JPG)
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/split.JPG)  
+
+Above plot shows, how types of movie can be splitted in 3 sections based on features, movies which are mostly box office bust, don't really have A celebrities , whereas movies with critical success have A celebrities but doesn't have a budget.Box office hits have both A celebrities as well as high budgets.
+
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/decision_movie.JPG)  
+
+The above decision tree shows how the movies can be categorized based on these two features : budget and celebrity list.
+
+
 
 
 
