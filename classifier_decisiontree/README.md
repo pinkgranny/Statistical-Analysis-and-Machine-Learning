@@ -24,7 +24,14 @@ In the above diagram it is clearly shown how decision tree works,the decision tr
 
 ## Classifying Movie with Decision tree - divide and conquer method:  
 
-For instance we have 3 categories of films, **critical success,mainstream hit,boxoffice hit** .
+For instance we have 3 categories of films, **critical success,mainstream hit,boxoffice hit** .Now the classification of the films depends on our variables in x and y axis.  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/movie_plot.JPG)
+
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/split.JPG)
+
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/decision_movie.JPG)
+
+
 
 
 
