@@ -9,6 +9,13 @@ Decision trees are flow-chart based model,after the model is created, the output
   
   * Diagnosis of medical conditions based on laboratory measurements, symptoms, or the rate of disease progression.  
 
+**Cons :**
+ * When data has wide range of nominal features or large number of numeric features it cannot fit into the problem.  
+ 
+ * The case results in wide number of decisions, and overly complex trees.
+ 
+ * Overfitting of data
+
 Decision trees are built using a heuristic called **recursive partitioning**. This approach is also commonly known as **divide and conquer** because it splits the data into subsets, which are then split repeatedly into even smaller subsets, and so on and so forth until the process stops when the algorithm determines the data within the subsets are sufficiently homogenous, or another stopping criterion has been met.  
 
 
