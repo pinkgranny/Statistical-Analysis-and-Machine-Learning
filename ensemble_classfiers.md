@@ -1,13 +1,13 @@
 # Other Classifiers  
 
-## AdaBoost Paradigm:  
+## AdaBoost Paradigm  
 
 
 
 
-## Gradient Boosted Regression Trees:  
+## Gradient Boosted Regression Trees  
 
 
 
-## Extremely Randomized Trees:  
+## Extremely Randomized Trees  
 
