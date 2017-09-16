@@ -18,22 +18,22 @@ Decision trees are flow-chart based model,after the model is created, the output
 
 Decision trees are built using a heuristic called **recursive partitioning**. This approach is also commonly known as **divide and conquer** because it splits the data into subsets, which are then split repeatedly into even smaller subsets, and so on and so forth until the process stops when the algorithm determines the data within the subsets are sufficiently homogenous, or another stopping criterion has been met.  
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/decisiontree.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree_randomforest/decisiontree.JPG)  
 
 In the above diagram it is clearly shown how decision tree works,the decision tree selects features, in the above case, it selects the feature *salary* , it chooses features most predictive of the target class. If the salary is higher than 50k,he accepts else rejects. The next feature he selects is commuting time.If it is less than 1hr -> accept, more -> reject.Offers free coffee -> accept , else reject.Working down each branch, the algorithm continues to divide and conquer the data,choosing the best candidate feature each time to create another decision node, until a stopping criterion is reached.  
 
 ## Classifying Movie with Decision tree - divide and conquer method:  
 
 For instance we have 3 categories of films, **critical success,mainstream hit,boxoffice hit** .Now the classification of the films depends on our variables in x and y axis.  
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/movie_plot.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree_randomforest/movie_plot.JPG)  
 
 x-axis : estimated budget($) , y-axis : list of celebrities. Based on budget and list of A celebrities, the type of movie is categorized.
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/split.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree_randomforest/split.JPG)  
 
 Above plot shows, how types of movie can be splitted in 3 sections based on features, movies which are mostly box office bust, don't really have A celebrities , whereas movies with critical success have A celebrities but doesn't have a budget.Box office hits have both A celebrities as well as high budgets.
 
-![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree/decision_movie.JPG)  
+![alt text](https://github.com/jishu1989/MachineLearning/blob/master/classifier_decisiontree_randomforest/decision_movie.JPG)  
 
 The above decision tree shows how the movies can be categorized based on these two features : budget and celebrity list.
 
