@@ -43,6 +43,24 @@ the data has 772 observations and 12 columns, below is the summary of the data:
  Max.   :60308   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
 
 ```  
+Now lets see the variables in the dataset more closely,below are the explanation of column names:  
+```
+> colnames(LL)
+ [1] "treated"   "age"       "education" "black"     "married"   "nodegree" 
+ [7] "re74"      "re75"      "re78"      "hispanic"  "u74"       "u75"      
+> 
+```
+- treated: Indicator variable for whether the participant received the treatment.
+-age: measured in years
+- education: years of education
+- black: Indicator variable for whether the participant is African-American.
+- married: Indicator variable for whether the participant is married.
+- nondegree: Indicator variable for not possessing a high school diploma.
+- re74: real earning in 1974
+- re75: real earning in 19757
+- hispanic: Indicator variable for whether the participant is Hispanic.
+- u74: Indicator variable for unemployed in 1974.
+- u75: Indicator variable for unemployed in 1975.
 
 
 
