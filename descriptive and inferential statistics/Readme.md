@@ -58,9 +58,23 @@ Now lets see the variables in the dataset more closely,below are the explanation
 - nondegree: Indicator variable for not possessing a high school diploma.
 - re74: real earning in 1974
 - re75: real earning in 19757
+- re78: real earning in 19758 
 - hispanic: Indicator variable for whether the participant is Hispanic.
 - u74: Indicator variable for unemployed in 1974.
-- u75: Indicator variable for unemployed in 1975.
+- u75: Indicator variable for unemployed in 1975.  
+
+## Descriptive Statistics:  
+
+- **Mean :**  In simple words calculating mean is calculating average.We try to compute the mean of earning of the people in the year 1978  
+```
+> mean(LL$re78)
+[1] 5454.636
+> dens_78=density(LL$re78,from = 0)
+> plot(dens_78,main = "Income in 1978")
+> abline(v=mean(LL$re78),col="red")
+> 
+```
+
 
 
 
