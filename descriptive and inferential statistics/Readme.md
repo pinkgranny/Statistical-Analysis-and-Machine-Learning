@@ -65,8 +65,12 @@ Now lets see the variables in the dataset more closely,below are the explanation
 
 ## Descriptive Statistics:  
 
-- **Mean :**  In simple words calculating mean is calculating average.We try to compute the mean of earning of the people in the year 1978  
+- **Mean :**  In simple words calculating mean is calculating average.We try to compute the mean of earning of the people in the year 1978.Maximum earning of a person in the year 1978 is $60,307.93 and minimum is $0. We also computed the mean income of people was $5454.636.  
 ```
+> max(LL$re78)
+[1] 60307.93
+> min(LL$re78)
+[1] 0
 > mean(LL$re78)
 [1] 5454.636
 > dens_78=density(LL$re78,from = 0)
