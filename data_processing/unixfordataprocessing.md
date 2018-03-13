@@ -43,3 +43,7 @@ $ for file in *.csv; do mkdir -- "${file%.csv}"; mv -- "$file" "${file%.csv}"; d
 sed -e 's/^/"/' file > file.new
 ```
 
+* Putting postfix
+```
+sed 's/$/"/' file > file.new
+```
