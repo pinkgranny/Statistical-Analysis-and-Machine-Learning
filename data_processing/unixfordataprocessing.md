@@ -1,4 +1,4 @@
-# Shell Programming
+# Shell Commands to Process Data
 
 Knowledge of shell programming is necessary for data processing purpose, in Unix enviroment.Specially processing text data.
 I start of with some basic shell commands for instance counting files and finding text using grep and then go forward, with more complex examples of shell scripting for processing data.
