@@ -37,3 +37,9 @@ $ for file in *.csv; do mkdir -- "${file%.csv}"; mv -- "$file" "${file%.csv}"; d
 ## Putting character at begining and end of everyline
 
 * Useful for converting text files to csv : https://www.shellhacks.com/sed-awk-add-end-beginning-line/
+
+* Putting prefix
+```
+sed -e 's/^/"/' file > file.new
+```
+
