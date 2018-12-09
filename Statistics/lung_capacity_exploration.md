@@ -1,4 +1,4 @@
-# Lung Capacity Data
+# Data Exploration
 
   ## source: 
 http://www.statslectures.com/index.php/r-stats-datasets
@@ -76,7 +76,7 @@ LungCap(Lung Capacity) is a numeric, Age is integer, Height is numeric, Smoke is
  
  Summary of the data:
  
- ![alt text](https://github.com/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/summary.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/summary.JPG)
  
  Finding the mean age of the female and the male population ```mean(Lung$Age[Lung$Gender=="female"]) #12.44972```, ```mean(Lung$Age[Lung$Gender=="male"]) #12.20708```.
  
