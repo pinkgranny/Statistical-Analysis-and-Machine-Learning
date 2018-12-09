@@ -7,7 +7,7 @@ http://www.statslectures.com/index.php/r-stats-datasets
 
 Lung Capacity dataset consists of 725 observation and 6 variables. ```dim(Lung)``` gives the dimensions of the dataset.
 After loading the data using ```read.table``` we can check the dataset from the workspace.
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/dataset.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/master/Statistics/screenshot/dataset.JPG)
 
 **LungCap** : Lung Capacity of the person
 
