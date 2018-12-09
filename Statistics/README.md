@@ -7,7 +7,7 @@ http://www.statslectures.com/index.php/r-stats-datasets
 
 Lung Capacity dataset consists of 725 observation and 6 variables. ```dim(Lung)``` gives the dimensions of the dataset.
 After loading the data using ```read.table``` we can check the dataset from the workspace.
-![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/Statistics/screenshot/dataset.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/dataset.JPG)
 
 **LungCap** : Lung Capacity of the person
 
@@ -24,12 +24,12 @@ After loading the data using ```read.table``` we can check the dataset from the 
 Note: Later we will be discussing more the data and their types.
 
 ```head(Lung)``` displays the first 6 rows, and ```tail(Lung)``` displays last 6 rows of the dataset.
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/head_6.JPG)     
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/head_6.JPG)     
 
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/tail_6.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/tail_6.JPG)
 
 ```names(Lung) ``` or ```colnames(Lung)``` displays the column names.
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/column_names.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/column_names.JPG)
 
 ```mean(Lung$Age)``` , calculates the mean of age variable , we can also find it after attaching the dataset, in that case we don't need
 to type ```Lung$Age``` everytime during our computation. For instance :
@@ -41,7 +41,7 @@ mean age of the samples present is 12.3269.
 
 Taking a plot of the age : ```plot(Age)``` , rather the age group.
 
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/age_plot.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/age_plot.JPG)
 
  ## data types:
  
@@ -76,7 +76,7 @@ LungCap(Lung Capacity) is a numeric, Age is integer, Height is numeric, Smoke is
  
  Summary of the data:
  
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/summary.JPG)
+ ![alt text](https://github.com/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/summary.JPG)
  
  Finding the mean age of the female and the male population ```mean(Lung$Age[Lung$Gender=="female"]) #12.44972```, ```mean(Lung$Age[Lung$Gender=="male"]) #12.20708```.
  
@@ -98,7 +98,7 @@ FemSmoke= (Gender=="female"& Smoke=="yes")
 MoreData=cbind(Lung,FemSmoke)
 MoreData[1:5,]
 ```
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/more_data.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/more_data.JPG)
  
  
  
