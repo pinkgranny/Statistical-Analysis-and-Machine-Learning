@@ -7,7 +7,7 @@
  
  Frequency table can be generated using the ```table()``` command. For instance ```table(Gender)``` creates the frequency table for Gender variable.
  
- ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/tree/master/Statistics/screenshot/barplot/freq_gender.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/freq_gender.JPG)
  
  ```barplot(count,main = "Count",xlab="Gender",ylab="count")```
  
