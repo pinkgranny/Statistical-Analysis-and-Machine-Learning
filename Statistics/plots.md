@@ -22,7 +22,7 @@
   
   ```barplot(percent, main = "Percent",xlab="Gender",ylab="%",las=1)```
   
-  ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/barplot/barplot_percent.JPG)
+  ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/barplot_percent.JPG)
   
   Plotting the barchart horizontally:
   
@@ -34,7 +34,7 @@ barplot(count,main = "Count",ylab="Gender",xlab="count",
 
 #names.arg to change the default "female","male"
 ```
-  ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/barplot/count_horiz.JPG)
+  ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/count_horiz.JPG)
   
  * **Piechart**
    
@@ -43,19 +43,19 @@ barplot(count,main = "Count",ylab="Gender",xlab="count",
 pie(count,main = "Count")
 box()
 ```
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/barplot/pie_chart.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/pie_chart.JPG)
 
  * **BoxPlot**
  
  A boxplot is appropriate for summarizing the distribution of **numeric variable**.
  
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/boxplot.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/boxplot.JPG)
  
  Visualizing the entire dataset in boxplot:
  
  ```boxplot(Lung,main ="LungCap Dataset",xlab="columns",ylab="values",las=1)```
  
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/boxplot/bp_dataset.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/boxplot/bp_dataset.JPG)
  
  Boxplot for LungCap:
  
@@ -64,7 +64,7 @@ quantile(LungCap)
 boxplot(LungCap,main ="LungCap", las=1,ylab="Lung Capacity",ylim=c(0,16),las=1)
  ```
  
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/boxplot/bp_lungcap.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/boxplot/bp_lungcap.JPG)
  
  We can also do a comparative analysis of two groups based on a single variable, for instance -
  male female ratio based on Lung Capacity.
@@ -73,7 +73,7 @@ boxplot(LungCap,main ="LungCap", las=1,ylab="Lung Capacity",ylim=c(0,16),las=1)
  #boxplot for lung capacity differentiated by Gender variable
 boxplot(LungCap~Gender,main="Boxplot by Gender",ylab="Lung Capacity")
 ```
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/boxplot/Lungcap_Gender.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/boxplot/Lungcap_Gender.JPG)
  
  * **Stratified Boxplot**: Stratified boxplot is useful in examining relationship between categorical variable and numeric
    variable, within strata or group defined by third categorical variable.
@@ -91,7 +91,7 @@ boxplot(LungCap~Gender,main="Boxplot by Gender",ylab="Lung Capacity")
 
 ```boxplot(LungCap~Smoke,main="Lung Capacity Smoker vs. NonSmoker",ylab="Lung Capacity")```
 
-  ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/stratified/smoker_nonsmoker.JPG)
+  ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/stratified/smoker_nonsmoker.JPG)
 
 *Inference : The box plot shows the smokers have larger lung capacity than non smokers, this is because of the age effect, the smokers are older in age than the non-smokers.Older people have bigger bodies than the children.*
  
@@ -101,13 +101,13 @@ Now taking the AgeStrata in consideration we can see the effect of Smoking on th
  
  For 18+ age strata, NonSmokers have greater lung capacity than Smokers
  
-  ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/stratified/smoker_nonsmoker18%2B.JPG)
+  ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/stratified/smoker_nonsmoker18%2B.JPG)
  
  Visualizing Lung Capacity of different Age Groups for Smoker and Non Smokers:
  
  ```boxplot(LungCap~Smoke*AgeGroup,main="Smoker vs. NonSmoker All Groups",ylab="Lung Capacity",las=2,col=c(4,2))```
  
-   ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/stratified/all_groups1.JPG)
+   ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/stratified/all_groups1.JPG)
  
  Below Script is to plot Lung Capacity of different Age Groups for Smoker and Non Smokers with legends:
  
@@ -122,6 +122,6 @@ axis(1,at=c(1.5,3.5,5.5,7.5),labels = c("<13","14/15","16/17","18+"))
 
 legend(x=5.5,y=4.5,legend=c("NonSmoke","Smoke"),col = c(4,2),pch = 15,cex = 0.8)
 ```
-![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/stratified/all_groups2.JPG)
+![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/stratified/all_groups2.JPG)
 
  * **Histograms** : Histograms are appropriate for summarizing the distribution of numeric variable.
