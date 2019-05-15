@@ -16,8 +16,9 @@
  
  To express the barplots as relative frequencies or percentages:
    ```table(Gender)/725```
+ 
   
-  ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/barplot/gender_percent.JPG)
+  ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/gender_percent.JPG)
   
   ```barplot(percent, main = "Percent",xlab="Gender",ylab="%",las=1)```
   
