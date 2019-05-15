@@ -12,7 +12,7 @@
  ```barplot(count,main = "Count",xlab="Gender",ylab="count")```
  
  We can see there are 358 females and 367 males in the sample.
- ![alt text](https://github.com/jishu1989/BioStatistical-Approach/blob/master/Lung_Capacity_Data/screenshot/barplot/barplot_count.JPG)
+ ![alt text](https://github.com/jishu1989/Statistical-Analysis-and-Machine-Learning/blob/master/Statistics/screenshot/barplot/barplot_count.JPG)
  
  To express the barplots as relative frequencies or percentages:
    ```table(Gender)/725```
